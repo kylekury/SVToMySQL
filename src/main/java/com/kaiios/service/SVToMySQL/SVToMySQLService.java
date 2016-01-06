@@ -32,6 +32,13 @@ public class SVToMySQLService {
         this(host, port, database, user, null);
     }
 
+    /**
+     * @param host DB Host
+     * @param port Port
+     * @param database Database Name
+     * @param user User Name with appropriate privileges
+     * @param password User password (leave null to omit password)
+     */
     public SVToMySQLService(String host, String port, String database, String user, String password) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
