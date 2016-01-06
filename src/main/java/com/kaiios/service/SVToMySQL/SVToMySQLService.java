@@ -22,7 +22,7 @@ import java.util.List;
  * 
  * Expects data to be valid for created table.
  * 
- * @author Kyle Kury
+ * @author Kyle Kury 
  *
  */
 public class SVToMySQLService {
