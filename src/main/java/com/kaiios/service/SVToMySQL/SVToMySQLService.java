@@ -66,7 +66,7 @@ public class SVToMySQLService {
      * @param filePath Path to the file.
      */
     public void saveTSVFileWithHeaderToTable(String tableName, String filePath) {
-        saveSVFileToTable(tableName, filePath, "UTF-8", "\\t", true, true, 200000);
+        saveSVFileToTable(tableName, filePath, "UTF-8", "\\t", true, true, 100000);
     }
     
     /**
@@ -77,7 +77,7 @@ public class SVToMySQLService {
      * @param filePath Path to the file.
      */
     public void saveTSVFileWithoutHeaderToTable(String tableName, String filePath) {
-        saveSVFileToTable(tableName, filePath, "UTF-8", "\\t", false, true, 200000);
+        saveSVFileToTable(tableName, filePath, "UTF-8", "\\t", false, true, 100000);
     }
     
     /**
@@ -88,7 +88,7 @@ public class SVToMySQLService {
      * @param filePath Path to the file.
      */
     public void saveCSVFileWithHeaderToTable(String tableName, String filePath) {
-        saveSVFileToTable(tableName, filePath, "UTF-8", ",", true, true, 200000);
+        saveSVFileToTable(tableName, filePath, "UTF-8", ",", true, true, 100000);
     }
     
     /**
@@ -99,7 +99,7 @@ public class SVToMySQLService {
      * @param filePath Path to the file.
      */
     public void saveCSVFileWithoutHeaderToTable(String tableName, String filePath) {
-        saveSVFileToTable(tableName, filePath, "UTF-8", ",", false, true, 200000);
+        saveSVFileToTable(tableName, filePath, "UTF-8", ",", false, true, 100000);
     }
     
     /**

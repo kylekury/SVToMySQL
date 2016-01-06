@@ -4,7 +4,8 @@
 * The service expects the table you want to insert to to have already been created.
 * The service expects the data you're trying to insert to be valid. If not, a batch may fail.
 * The service is NOT idempotent, empty the table before trying to re-insert.
-* You can choose batch-size to increase performance (default is 200k).
+* You can choose batch-size to increase performance (default is 100k).
+** Note that the default batch size requires large packets, use something like 'max_allowed_packet=16M' in your my.ini/my.cnf 
 * You can specify character-encoding on the input file.
 
 # Initialization
